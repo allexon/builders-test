@@ -1,3 +1,5 @@
+![design-temperatura](https://user-images.githubusercontent.com/1206288/189553327-8f4ff1a9-aade-4ddb-ac8d-e2fdc4fe9375.png)
+
 # Projeto
 > Um pequenos projeto React de Previsão do Tempo
 

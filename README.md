@@ -9,9 +9,6 @@
 
 ## Como instalar
 
-1. Basta fazer o clon
+1. Basta fazer o clone
 2. aplicar um yarn install
 3. rodar com yarn dev
-
-O mesmo faz busca em algums api de previsão do tempo, no momento não integração de com banco de dados
-

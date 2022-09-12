@@ -22,11 +22,6 @@ const Home = () => {
         }, 3000)
     }
 
-    console.log(':: ENDEREÇO ->', address)
-    console.log(':: TEMPERATURA ->', temperature)
-    console.log(':: LATITUDE E LONGITUDE ->', latLon)
-    console.log(':: MODAL ->', modal)
-
     return (
         <Layout>
             <Loader />

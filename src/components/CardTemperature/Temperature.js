@@ -1,6 +1,6 @@
 import React from 'react'
 import { ContainerCardTemperature, Box, Content, Label, Value, Tag, Strong, BoxTop, Icon } from './styles'
-import { storeTemperature, storeAddress, storeLatLon } from '../../store/index'
+import { storeTemperature, storeAddress, storeLatLon, storeUrls } from '../../store/index'
 import { SvgT1, SvgT2, SvgT3 } from '../../assets/svgs/index'
 import { LinkButton } from '../../default/index'
 
@@ -9,7 +9,8 @@ const Temperature = (props) => {
     const temperature = storeTemperature(state => state)
     const address = storeAddress(state => state)
     const latLon = storeLatLon(state => state)
-
+    const urls = storeUrls(state => state)
+    
     const fnOptionIcon = (temp) => {
 
         // Uma bricadeira, com temp
@@ -26,6 +27,10 @@ const Temperature = (props) => {
         if(_temp > 20 && _temp < 100) {
             return <SvgT2 />
         }
+    }
+
+    const fnUpdateUrl = () => {
+        urls.activeUrl == 'page-card-temperature'? urls.fnOnChangeUrls({field:'', value:'/'}) : urls.fnOnChangeUrls({field:'', value:'page-card-temperature'})
     }
 
     return (
@@ -56,8 +61,8 @@ const Temperature = (props) => {
                     <Value>{latLon.data?.coords?.latitude}</Value>
                     <Label width='80px'>Longitude:</Label>
                     <Value>{latLon.data?.coords?.latitude}</Value>
-                    <div style={{position:'absolute', bottom:'40px', right:'20px'}}>
-                        <LinkButton href='page-card-temperature'></LinkButton>
+                    <div style={{position:'absolute', bottom:'40px', right:'20px'}} onClick={() => {fnUpdateUrl()}}>
+                        <LinkButton href={urls.activeUrl}></LinkButton>
                     </div>
                 </Content>
             </Box>

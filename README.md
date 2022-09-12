@@ -5,7 +5,7 @@
 
 ## Como usar
 
-É pequeno projeto que demonstra como eu organizo meu desenvolvimento, com objeto de melhoria continha e também ser base para outros desenvolvimento.
+É pequeno projeto que demonstra como eu organizo meu desenvolvimento, com objeto de melhoria continua e também servir de base para outros desenvolvimento.
 
 ## Como instalar
 

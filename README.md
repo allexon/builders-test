@@ -1,3 +1,5 @@
+![design-temperatura](https://user-images.githubusercontent.com/1206288/189553375-a341ca83-5917-4387-a8d0-727dcc2132ad.png)
+
 # Projeto
 > Um pequenos projeto React de Previsão do Tempo
 
@@ -7,9 +9,6 @@
 
 ## Como instalar
 
-1. Basta fazer o clon
+1. Basta fazer o clone
 2. aplicar um yarn install
 3. rodar com yarn dev
-
-O mesmo faz busca em algums api de previsão do tempo, no momento não integração de com banco de dados
-

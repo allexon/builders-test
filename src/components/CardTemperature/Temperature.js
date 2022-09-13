@@ -1,7 +1,7 @@
 import React from 'react'
 import { ContainerCardTemperature, Box, Content, Label, Value, Tag, Strong, BoxTop, Icon } from './styles'
 import { storeTemperature, storeAddress, storeLatLon, storeUrls } from '../../store/index'
-import { SvgT1, SvgT2, SvgT3 } from '../../assets/svgs/index'
+import { Svg1, Svg2, Svg3 } from '../../assets/svgs/index'
 import { LinkButton } from '../../default/index'
 
 const Temperature = (props) => {
@@ -17,15 +17,15 @@ const Temperature = (props) => {
         let _temp = temp
         
         if(_temp > 0 && _temp < 10) {
-            return <SvgT3 />
+            return <Svg3 />
         }
 
         if(_temp > 10 && _temp < 20) {
-            return <SvgT1 />
+            return <Svg1 />
         }
 
         if(_temp > 20 && _temp < 100) {
-            return <SvgT2 />
+            return <Svg2 />
         }
     }
 
@@ -56,7 +56,7 @@ const Temperature = (props) => {
 
             <Box>
                 <Content>
-                    <Icon><SvgT3 /></Icon>
+                    <Icon><Svg3 /></Icon>
                     <Label width='80px'>Latitude:</Label>
                     <Value>{latLon.data?.coords?.latitude}</Value>
                     <Label width='80px'>Longitude:</Label>

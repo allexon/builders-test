@@ -4,4 +4,4 @@ export default {
         config.resolve.alias['react-dom/test-utils'] = 'preact/test-utils';
         config.resolve.alias['react-dom'] = 'preact/compat';
     }
-};
+}

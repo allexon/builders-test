@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-export const SvgT2 = ({ width, bottom, left, top}) => (
+export const Svg2 = ({ width, bottom, left, top}) => (
     <SVG width={width} bottom={bottom} left={left} top={top} viewBox="0 0 45.237 44.965">
         <defs>
             <radialGradient id="radialGradient972" cx="85.368" cy="166.2" r="9.6931" gradientTransform="matrix(1.1675 0 0 1.1665 -78.925 -175.9)" gradientUnits="userSpaceOnUse">
@@ -16,9 +16,6 @@ export const SvgT2 = ({ width, bottom, left, top}) => (
         </SVG>
 );
 
-const SVG = styled.svg`
-    /* bottom: ${props => props.bottom ? props.bottom : '5px'};
-    left: ${props => props.left ? props.left : '25px'};
-    top: ${props => props.top ? props.top : '0px'}; */
+const SVG = styled.svg`    
     width: ${props => props.width ? props.width : '30%'};
 `

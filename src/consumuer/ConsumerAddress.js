@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import axios from 'axios'
 import { storeAddress, storeUrls, storeLatLon, storeMessage } from '../store/index'
 
@@ -18,8 +18,7 @@ const ConsumerAddress = () => {
         let _result = null
 
         let config = {
-        headers: {'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json'}, allowedHeaders: "*"}
-            
+        headers: {'Access-Control-Allow-Origin': '*', 'Content-Type': 'application/json'}, allowedHeaders: "*"}            
         let _url = `${urls.urlAddress}lat=${latLon.data?.coords.latitude}&lon=${latLon.data?.coords.longitude}`
                                      
         try {
